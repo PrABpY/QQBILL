@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #A9A9A9;
+    margin-top: 100px;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.temperature,
+.humidity,
+.water-level {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.label {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 50px;
+}
+
+.value,
+.percentage {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.bar {
+    width: 50px;
+    height: 300px;
+    background-color: #1E90FF;
+    position: relative;
+    left: 39%;
+    top: 2%;
+    box-sizing: border-box;
+    transform-origin: bottom;
+}
+
+.fill {
+    width: 100%;
+    background-color: #ccc;
+    animation: grow 1.5s ease-in backwards;
+    transform-origin: top;
+}
+
+.statuss {
+    font-size: 24px;
+    margin-top: 20px;
+    color: green;
+}
+
+.space {
+    font-size: 1px;
+    margin-top: 40px;
+    color: green;
+}
+
+.head {
+    font-size: 35px;
+}
+
+@keyframes grow{
+  from{
+    transform: scaleY(0);
+  }
+}
+
+@media (max-width: 768px) {
+    .status {
+        flex-direction: column;
+    }
+
+    .temperature,
+    .humidity,
+    .water-level {
+        margin-bottom: 20px;
+    }
+}

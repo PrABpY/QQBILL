@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เหนื่อยโว้ย</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="head">แสดงสถานะของไอ้แท่งทั้งสาม</h1>
+        <div class="status">
+            <div class="temperature">
+                <div class="label">อุณหภูมิ</div>
+                <div class="value" id="temperature">25.5 °C</div>
+                <div class="label">ความชื้น</div>
+                <div class="value" id="humidity">50%</div>
+                <div class="label">Pump status</div>
+                <div class="statuss" id="statuss">Activate</div>
+            </div>
+            <div class="water-level">
+                <div class="label">ระดับน้ำ</div>
+                <div class="bar">
+                    <div class="fill" id="waterLevelFill"></div>
+                </div>
+                <div class="percentage" id="waterLevelPercentage">0%</div>
+                <div class="space">.</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
