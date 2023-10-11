@@ -16,9 +16,9 @@ function updateWaterLevel(level) {
 }
 
 window.onload = function() {
-    const mockTemperature = Math.random() * 30 + 20;
-    const mockHumidity = Math.random() * 50 + 30;
-    const mockWaterLevel = Math.random() * 50 + 30;  
+    const mockTemperature = Math.random() * 30 + 10;
+    const mockHumidity = Math.random() * 40 + 5;
+    const mockWaterLevel = Math.random() * 50 + 10;  
     updateTemperature(mockTemperature);
     updateHumidity(mockHumidity);
     updateWaterLevel(mockWaterLevel);
